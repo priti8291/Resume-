@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- header section start -->
+     <header class="header">
+        <a href="#" class="logo">MakeMyResume</a>
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="#services">services</a>
+            <a href="#about">about</a>
+            <a href="#resume">resume</a>
+            <a href="#pricing">pricing</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        </header>
+         <!-- header section end-->
+         <!-- form section start -->
+         <section id="about-sc" class="">
+            <div class="container">
+                <div class="about-cnt">
+                    <form action="" class="cv-form" id="cv-form">
+                        <div class="cv-form-blk">
+                            <div class="cv-form-row-title">
+                                <h3>about section</h3>
+                            </div>
+                            <div class="cv-form-row ">
+                                <div class="cols-3">
+                                    <div class="form-elem">
+                                        <label for="" class="form-label">FirstName</label>
+                                        <input type="text" name="firstname" class="form-control" 
+                                        id=""  placeholder="e.g. John">
+                                        <span class="form-text"></span>
+                                    </div>
+                                    <div class="form-elem">
+                                        <label for="" class="form-label">MiddleName <span class="opt-text">(optional)</span></label>
+                                        <input type="text" name="middlename" class="form-control" 
+                                        id=""  placeholder="e.g. Herbert">
+                                        <span class="form-text"></span>
+                                    </div>
+                                    <div class="form-elem">
+                                        <label for="" class="form-label">LastName</label>
+                                        <input type="text" name="lastname" class="form-control" 
+                                        id=""  placeholder="e.g. Done">
+                                        <span class="form-text"></span>
+                                    </div>
+                                </div>
+                                <div class="cols-3">
+                                    <div class="form-elem">
+                                        <label for="" class="form-label">Your Image</label>
+                                        <input type="file" name="image" class="form-control"
+                                        id="" accept="image/+" >
+                                    </div>
+                                    <div class="form-elem">
+                                        <label for="" class="form-label">Designation</label>
+                                        <input type="text" name="designation" class="form-control" 
+                                        id=""  placeholder="e.g. Sr.Accountants">
+                                        <span class="form-text"></span>
+                                    </div>
+                                    <div class="form-elem">
+                                        <label for="" class="form-label">Address</label>
+                                        <input type="text" name="address" class="form-control" 
+                                        id="" placeholder="e.g. Lake Street-23">
+                                        <span class="form-text"></span>
+                                    </div>
+                                </div>
+                                <div class="cols-3">
+                                    <div class="form-elem">
+                                        <label for="" class="form-label">Email</label>
+                                        <input type="email" name="email" class="form-control" 
+                                        id=""  placeholder="e.g. johndoe@gmail.com">
+                                        <span class="form-text"></span>
+                                    </div>
+                                    <div class="form-elem">
+                                        <label for="" class="form-label">Phone No</label>
+                                        <input type="text" name="phoneno" class="form-control" 
+                                        id=""  placeholder="e.g. 456-677-877, 456.877.777">
+                                        <span class="form-text"></span>
+                                    </div>
+                                    <div class="form-elem">
+                                        <label for="" class="form-label">Summary</label>
+                                        <input type="text" name="summary" class="form-control" 
+                                        id=""  placeholder="e.g. Doe">
+                                        <span class="form-text"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cv-form-blk">
+                            <div class="cv-form-row-title">
+                                <h3>achievements</h3>
+                            </div>
+                            
+                                    <div class="cv-form-row" id="achieve">
+                                            <div class="cols-2">
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">Title</label>
+                                                    <input type="text" name="achieve_title" class="form-control atitle" 
+                                                    id=""  placeholder="">
+                                                    <span class="form-text"></span>
+                                                </div>
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">Description</label>
+                                                    <input type="text" name="achieve_description" 
+                                                    class="form-control adesc" 
+                                                    id=""  placeholder="">
+                                                    <span class="form-text"></span>
+                                                </div>
+                                            </div>
+                                            <button  type="button" onclick="deleteachievebtn(this)" class="repeater-remove-btn">-</button>
+                                            <button type="button" onclick="addachieve()" value="Add" class="repeater-add-btn">+</button>
+                                        </div>
+                                    
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="cv-form-blk">
+                            <div class="cv-form-row-title">
+                                <h3>experience</h3>
+                            </div>
+                           <div class="cv-form-row" id="experience">
+                            <div class="experience-row">
+                                            <div class="cols-3">
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">Title</label>
+                                                    <input type="text" name="exp_title" class="form-control " 
+                                                    id="" >
+                                                    <span class="form-text"></span>
+                                                </div>
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">Company/Organisation</label>
+                                                    <input type="text" name="exp_organisation" 
+                                                    class="form-control " 
+                                                    id=""  >
+                                                    <span class="form-text"></span>
+                                                </div>
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">location</label>
+                                                    <input type="text" name="exp_location" 
+                                                    class="form-control " 
+                                                    id="" >
+                                                    <span class="form-text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="cols-3">
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">Start date</label>
+                                                    <input type="date" name="exp_start_date" class="form-control " 
+                                                    id="" >
+                                                    <span class="form-text"></span>
+                                                </div>
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">End Date</label>
+                                                    <input type="date" name="exp_end_date" 
+                                                    class="form-control " 
+                                                    id="" >
+                                                    <span class="form-text"></span>
+                                                </div>
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">Description</label>
+                                                    <input type="text" name="exp_description" 
+                                                    class="form-control" 
+                                                    id=""  >
+                                                    <span class="form-text"></span>
+                                                </div>
+                                                <button  type="button" class="repeater-remove-btn" onclick="removexperience(this)">-</button>
+                                            </div>
+                                    </div>
+                                    <button type="button" class="repeater-add-btn" onclick="addexperience()">+</button>
+                            </div>
+                        
+                        <div class="cv-form-blk">
+                            <div class="cv-form-row-title">
+                                <h3>education</h3>
+                            </div>
+                            <div class="cv-form-row" id="education">
+                                <div class="education-row">
+                                            <div class="cols-3">
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">School</label>
+                                                    <input type="text" name="edu_school" class="form-control " 
+                                                    id="" onkeyup="" >
+                                                  
+                                                </div>
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">Degree</label>
+                                                    <input type="text" name="edu_degree" 
+                                                    class="form-control " 
+                                                    id="" onkeyup="" >
+                                                   
+                                                </div>
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">City</label>
+                                                    <input type="text" name="edu_city" 
+                                                    class="form-control " 
+                                                    id="" onkeyup="" >
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="cols-3">
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">Start date</label>
+                                                    <input type="date" name="edu_start_date" class="form-control" 
+                                                    id="" onkeyup="" >
+                                                    <span class="form-text"></span>
+                                                </div>
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">End Date</label>
+                                                    <input type="date" name="edu_graduation_date" 
+                                                    class="form-control " 
+                                                    id="" onkeyup="" >
+                                                    <span class="form-text"></span>
+                                                </div>
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">Description</label>
+                                                    <input type="text" name="edu_description" 
+                                                    class="form-control " 
+                                                    id="" onkeyup="" >
+                                                    <span class="form-text"></span>
+                                                </div>
+                                                <button  type="button" onclick="removeeducation(this)" class="repeater-remove-btn">-</button>
+                                            </div>
+                                </div>
+                                <button type="button" onclick="addeducation()" class="repeater-add-btn">+</button>
+                        </div>
+                       
+                        <div class="cv-form-blk">
+                            <div class="cv-form-row-title">
+                                <h3>projects</h3>
+                            </div>
+                            <div class="cv-form-row" id="proj">
+                                            <div class="cols-3">
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">Project Name</label>
+                                                    <input type="text" name="proj_title" class="form-control pname" 
+                                                    id="" onkeyup=""  placeholder="Enter Project name....">
+                                                   
+                                                </div>
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">Project Link</label>
+                                                    <input type="text" name="proj_link" 
+                                                    class="form-control plink" 
+                                                    id="" onkeyup="" placeholder="Enter Project Link....." >
+                                                    
+                                                </div>
+                                                <div class="form-elem">
+                                                    <label for="" class="form-label">Description</label>
+                                                    <input type="text" name="proj_description" 
+                                                    class="form-control pdesc" 
+                                                    id="" onkeyup="" placeholder="Enter Project Description......." >
+                                                   
+                                                </div>
+                                            </div>
+                                            
+                                            <button  type="button" class="repeater-remove-btn" onclick="deleteprojectbtn(this)">-</button>
+                                           
+                                            <button type="button"  id="projectadd" class="repeater-add-btn" onclick="addproject()">+</button>
+                                        </div>
+                                       
+                            </div>
+                        
+                        <div class="cv-form-blk">
+                            <div class="cv-form-row-title">
+                                <h3>skills</h3>
+                            </div>
+                           <div class="cv-form-row" id="we">
+                                <div class="form-elem1" >
+                                <label for="" class="form-label">Skill</label>
+                                <textarea name="skill" class="form-control mt-3 weField" 
+                                rows="3" placeholder="Enter Here..."></textarea>
+                                 </div>
+                                <button  type="button" class="repeater-remove-btn" onclick="deleteNewWEField()">-</button>
+                            
+                            <button type="button" class="repeater-add-btn" id="weAddButton" onclick="addNewWEField()">+</button>
+                                    
+                                </div>
+                        </div>
+                                
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </section>
+         <!-- form section end -->
+          <!--download resume start-->
+    <section class="print-btn-sc">
+        <div class="container">
+            <button type="button" class="print-btn btn btn-primary" onclick="">CreateMyResume</button>
+        </div>
+    </section>
+    <!--download resume end-->
+         <script src="script.js"></script>  
+</body>
+</html>
